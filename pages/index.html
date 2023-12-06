@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuários</title>
+        <link rel = "stylesheet" href="./style.css">
+    
+    </head>
+    
+<body page='lista'> 
+    <div id='listaRegistros'>
+
+        <div style='display: flex;'>
+            <input style='flex:1' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Função</th>
+                    <th>Curso</th>
+                    <th>Validade</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+
+        <div>
+            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
+        </div>
+
+    </div>
+
+    <form id='cadastroRegistro'>
+
+        <div class='label'>
+            <div>ID</div>
+            <div>
+                <input type='number' readonly id='id' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Nome</div>
+            <div>
+                <input id='nome' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Função</div>
+            <div>
+                <input type='text' id='funcao'/>
+            </div>
+        </div>
+
+        <div class = 'label'>
+            <div>Curso</div>
+            <div>
+                <input type='text' id='curso'>
+            </div>
+        </div>
+
+        <div class ='label'>
+            <div>Validade</div>
+            <div>
+                <input type='text' id='validade'>
+            </div>
+        </div>
+
+        <div class = 'label'>
+            <div>Status de treinamento</div>
+            <div>
+                <input type='text' id='status' class= 'teste'>
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
+        </div>
+
+    </form>
+    <footer>
+        <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Todos os direitos reservados &copy;2023</p>
+        </center>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
